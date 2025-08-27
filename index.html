@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <title>Reduslim - Brzo mršavljenje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
+    .container { max-width: 700px; margin: auto; background: #fff; padding: 20px; text-align: center; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h1 { color: #2c3e50; }
+    .price { font-size: 22px; margin: 15px 0; }
+    .old-price { text-decoration: line-through; color: #888; }
+    .new-price { color: #e74c3c; font-weight: bold; font-size: 26px; }
+    .stock { color: #27ae60; font-size: 18px; margin: 10px 0; }
+    img { max-width: 100%; margin: 20px 0; }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    input { padding: 12px; font-size: 16px; width: 100%; border: 1px solid #ccc; border-radius: 6px; }
+    button { padding: 15px; font-size: 18px; background: #e74c3c; color: #fff; border: none; border-radius: 8px; cursor: pointer; transition: 0.3s; }
+    button:hover { background: #c0392b; }
+    .footer { margin-top: 20px; font-size: 14px; color: #777; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Reduslim – Vaš put ka savršenoj liniji</h1>
+    <p>Brzo i lako mršavljenje bez dijeta i iscrpljujućih treninga.</p>
+
+    <img src="product.png" alt="Reduslim kapsule">
+
+    <div class="price">
+      <span class="old-price">4000 RSD</span> → <span class="new-price">2000 RSD</span>
+    </div>
+    <div class="stock">⚡ Ostalo je samo nekoliko paketa na lageru!</div>
+
+    <form action="api.php" method="POST">
+      <input type="text" name="name" placeholder="Vaše ime" required>
+      <input type="tel" name="phone" placeholder="Broj telefona" required>
+      <button type="submit">Naruči odmah</button>
+    </form>
+
+    <div class="footer">
+      © 2025 Reduslim. Sva prava zadržana.
+    </div>
+  </div>
+</body>
+</html>
